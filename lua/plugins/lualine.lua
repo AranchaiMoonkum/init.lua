@@ -15,8 +15,15 @@ return {
 				lualine_a = {
 					{ "mode", separator = "" },
 				},
-				lualine_b = {},
+				lualine_b = {
+					{ "branch", icon = "" },
+				},
 				lualine_c = {
+					{
+						"filetype",
+						icon_only = true,
+						padding = { left = 1, right = 0 },
+					},
 					{ "filename", path = 1, separator = "", shorting_target = 40 },
 					{
 						"diff",
@@ -36,9 +43,6 @@ return {
 							info = " ",
 							hint = "󰌵 ",
 						},
-					},
-					{
-						"filetype",
 					},
 					{
 						function()
@@ -67,7 +71,6 @@ return {
 					},
 					"progress",
 					"location",
-					{ "branch", icon = "" },
 				},
 				lualine_y = {},
 				lualine_z = {},
