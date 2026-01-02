@@ -12,18 +12,10 @@ return {
 			completion = {
 				menu = {
 					auto_show = true,
-					draw = {
-						columns = {
-							{ "kind_icon" },
-							{ "label" },
-							{ "kind", gap = 1 },
-							{ "label_description", gap = 1 },
-							{ "source_name", gap = 1 },
-						},
-					},
 				},
 				documentation = {
 					auto_show = true,
+					auto_show_delay_ms = 500,
 				},
 			},
 			sources = {
