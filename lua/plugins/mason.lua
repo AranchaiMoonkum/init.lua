@@ -7,7 +7,17 @@ return {
 	},
 	config = function()
 		-- Show diagnostic virtual text
-		vim.diagnostic.config({ virtual_text = true })
+		vim.diagnostic.config({
+			virtual_text = true,
+			float = {
+				border = "single",
+			},
+		})
+
+		-- Hover with border
+		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+			border = "single",
+		})
 
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("LspConfig", {}),
@@ -27,9 +37,9 @@ return {
 				vim.keymap.set("n", "K", function()
 					local line = vim.api.nvim_win_get_cursor(0)[1] - 1
 					if vim.diagnostic.get(0, { lnum = line })[1] then
-						vim.diagnostic.open_float(opts)
+						vim.diagnostic.open_float()
 					else
-						vim.lsp.buf.hover(opts)
+						vim.lsp.buf.hover()
 					end
 				end)
 			end,
