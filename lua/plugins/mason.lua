@@ -26,7 +26,7 @@ return {
 
 				-- Mappings.
 				-- See `:help vim.lsp.*` for documentation on any of the below functions
-				vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+				-- vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 				vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 				vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 				vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
