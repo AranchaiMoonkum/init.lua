@@ -7,20 +7,6 @@ return {
 	},
 	config = function()
 		require("telescope").setup({
-			pickers = {
-				find_files = {
-					theme = "ivy",
-				},
-				live_grep = {
-					theme = "ivy",
-				},
-				buffers = {
-					theme = "ivy",
-				},
-				help_tags = {
-					theme = "ivy",
-				},
-			},
 			extensions = {
 				fzf = {
 					fuzzy = true,

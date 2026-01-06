@@ -21,7 +21,7 @@ vim.opt.swapfile = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.laststatus = 3
-vim.opt.showtabline = 1
+vim.opt.showtabline = 2
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 vim.opt.fillchars = { eob = " " }
