@@ -12,6 +12,7 @@ vim.o.smartcase = true
 vim.o.signcolumn = "yes"
 vim.o.splitright = true
 vim.o.splitbelow = true
+vim.o.statusline = " %y%w%r %f  %m%= %l/%L |%3.c%( %)"
 
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -21,7 +22,7 @@ vim.opt.swapfile = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.laststatus = 3
-vim.opt.showtabline = 2
+vim.opt.showtabline = 1
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 vim.opt.fillchars = { eob = " " }

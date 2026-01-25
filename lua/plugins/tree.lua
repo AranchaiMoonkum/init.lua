@@ -1,13 +1,14 @@
 return {
-	"nvim-tree/nvim-tree.lua",
-	version = "*",
+	"stevearc/oil.nvim",
 	lazy = false,
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
-		require("nvim-tree").setup({})
-
-		vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
+		require("oil").setup({
+			columns = { "icon" },
+			buf_options = { bufhidden = "hide" },
+		})
+		vim.keymap.set("n", "-", "<cmd>Oil<cr>")
 	end,
 }

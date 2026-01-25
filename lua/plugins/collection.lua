@@ -1,10 +1,5 @@
 return {
 	{
-		"altermo/ultimate-autopair.nvim",
-		event = { "InsertEnter" },
-		config = true,
-	},
-	{
 		"windwp/nvim-ts-autotag",
 		config = true,
 	},

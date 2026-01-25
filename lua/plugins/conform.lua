@@ -13,10 +13,6 @@ return {
 				css = { "prettier" },
 				go = { "goimports-reviser" },
 			},
-			format_on_save = {
-				timeout_ms = 500,
-				lsp_format = "fallback",
-			},
 		})
 
 		-- Format by pressing <leader>-fm
